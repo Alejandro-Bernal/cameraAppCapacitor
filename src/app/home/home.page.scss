@@ -1,3 +1,8 @@
+ion-card {
+  --background:#b4a0ff !important;
+}
+
+
 #container {
   text-align: center;
 
@@ -24,4 +29,8 @@
 
 #container a {
   text-decoration: none;
+}
+
+input[type="file"] {
+  display: none;
 }
