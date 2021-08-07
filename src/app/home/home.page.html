@@ -5,33 +5,43 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">TEST</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> -->
 
-  <ion-button size="small" (click)="takePicture()">
-    <ion-icon name="camera" slot="start"></ion-icon>
-    <ion-label>Camera</ion-label>
-  </ion-button>
-  <ion-button size="small" (click)="takePicture()">
-    <ion-icon name="image" slot="start"></ion-icon>
-    <ion-label>Gallery</ion-label>
-  </ion-button>
-  <input
-    type="file"
-    *ngIf="isDesktop"
-    #filePicker
-    (change)="onChooseFile($event)"
-  />
+  <div class="button-container">
+    <div class="camera-button">
+      <ion-button size="small" (click)="takePicture()">
+        <ion-icon name="camera" slot="start"></ion-icon>
+        <ion-label>Camera</ion-label>
+      </ion-button>
+    </div>
 
-  <ion-button size="small" (click)="showResources()">
-    <ion-icon name="image" slot="start"></ion-icon>
-    <ion-label>TEST</ion-label>
-  </ion-button>
+    <input
+      type="file"
+      *ngIf="isDesktop"
+      #filePicker
+      (change)="onChooseFile($event)"
+    />
 
-  <form [formGroup]="form">
+    <div class="camera-button">
+      <ion-button size="small" (click)="addCouch()">
+        <ion-icon name="image" slot="start"></ion-icon>
+        <ion-label>ADD</ion-label>
+      </ion-button>
+    </div>
+
+    <div class="camera-button">
+      <ion-button size="small" (click)="removeCouch()">
+        <ion-icon name="image" slot="start"></ion-icon>
+        <ion-label>REMOVE</ion-label>
+      </ion-button>
+    </div>
+  </div>
+
+  <!-- <form [formGroup]="form">
     <label> Name </label>
     <ion-input
       type="text"
@@ -47,28 +57,29 @@
       name="avatar"
       accept="image/*"
       (change)="readFile($event)"
-    ></ion-input>
+    ></ion-input> -->
 
-    <br />
+  <!-- <br />
 
     <ion-button type="submit" (click)="uploadFile()">Save</ion-button>
-  </form>
+  </form> -->
 
-  <ion-card>
-    <ion-card-content *ngIf="photo">
-      <img [src]="photo" />
-    </ion-card-content>
-  </ion-card>
+  <!-- <div class="example-box" cdkDrag> ../../assets/3d/scene/root.gltf-->
+  <!-- <div id="container">
+    <model-viewer
+      src="https://us-east-2.sumerian.aws/5de40037b60044258752c624c9dc47b9.scene"
+      alt="A 3D model of a cube"
+      field-of-view="80deg"
+      camera-controls
+    ></model-viewer>
+  </div> -->
+  <!-- </div> -->
+  <div class="image-container">
+    <img id="myImage" src="../../assets/teens-exploring-technology.png" />
+  </div>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      <ion-card-title>Card Title</ion-card-title>
-    </ion-card-header>
-
-    <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile, and
-      climb a mountain or spend a week in the woods. Wash your spirit clean.
-    </ion-card-content>
-  </ion-card>
+  <!-- <div class="one" [innerHtml]="htmlToAdd"></div> -->
+  <!-- <div class="engine-wrapper">
+      <canvas #rendererCanvas></canvas>
+    </div> -->
 </ion-content>

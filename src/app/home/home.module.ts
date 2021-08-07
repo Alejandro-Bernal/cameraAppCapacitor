@@ -4,6 +4,9 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
+// Angular material
+import { DragDropModule } from '@angular/cdk/drag-drop';
+
 import { HomePageRoutingModule } from './home-routing.module';
 
 @NgModule({
@@ -13,6 +16,7 @@ import { HomePageRoutingModule } from './home-routing.module';
     ReactiveFormsModule,
     IonicModule,
     HomePageRoutingModule,
+    DragDropModule,
   ],
   declarations: [HomePage],
 })

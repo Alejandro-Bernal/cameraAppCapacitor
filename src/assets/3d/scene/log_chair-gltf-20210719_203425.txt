@@ -1,0 +1,5 @@
+  "INFO: Downloading Sumerian format scene....",
+  "INFO: Converting to glTF format....",
+  "INFO: Using glTF extension KHR_lights_punctual",
+  "INFO: Using glTF extension KHR_lights_punctual for object 'Key - Directional'",
+  "INFO: Using glTF extension KHR_lights_punctual for object 'Light'"
