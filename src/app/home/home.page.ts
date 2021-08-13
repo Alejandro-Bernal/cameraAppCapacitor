@@ -44,6 +44,8 @@ export class HomePage implements OnInit {
   public rendererCanvas: ElementRef<HTMLCanvasElement>;
   // public loader: GLTFLoader;
   public cubeObject = '../../assets/3d/scene/root.gltf';
+  public chair =
+    'https://roomcraft-assets.s3.amazonaws.com/chair/chair-roomcraft/root.gltf';
 
   public listOfImages = [];
   // For file upload
@@ -162,7 +164,7 @@ export class HomePage implements OnInit {
 
   addCouch() {
     this.htmlToAdd =
-      '<model-viewer src="../../assets/3d/scene/root.gltf" alt="A 3D model of a cube" camera-controls></model-viewer>';
+      '<model-viewer src="../../assets/3d/chair-roomcraft/root.gltf" alt="A 3D model of a cube" camera-controls></model-viewer>';
   }
 
   removeCouch() {

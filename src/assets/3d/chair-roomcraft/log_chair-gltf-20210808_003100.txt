@@ -1,0 +1,6 @@
+  "INFO: Downloading Sumerian format scene....",
+  "INFO: Converting to glTF format....",
+  "INFO: Using glTF extension KHR_lights_punctual",
+  "INFO: Using glTF extension KHR_lights_punctual for object 'Key - Directional'",
+  "INFO: Using glTF extension KHR_lights_punctual for object 'Rim - Directional'",
+  "INFO: Converting classic material \"defaultMat\" (e513bc4a782b47a28ea6e33e29568164.material) to its PBR representation."

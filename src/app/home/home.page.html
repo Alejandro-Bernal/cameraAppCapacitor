@@ -41,6 +41,11 @@
     </div>
   </div>
 
+  <div class="example-boundary">
+    <div class="example-box" cdkDragBoundary=".example-boundary" cdkDrag>
+      I can only be dragged within the dotted container
+    </div>
+  </div>
   <!-- <form [formGroup]="form">
     <label> Name </label>
     <ion-input
@@ -65,21 +70,52 @@
   </form> -->
 
   <!-- <div class="example-box" cdkDrag> ../../assets/3d/scene/root.gltf-->
-  <!-- <div id="container">
-    <model-viewer
-      src="https://us-east-2.sumerian.aws/5de40037b60044258752c624c9dc47b9.scene"
-      alt="A 3D model of a cube"
+  <div id="container" [innerHtml]="htmlToAdd | htmlHandle">
+    <!-- <model-viewer
+      src="../../assets/3d/lamp-roomcraft/root.gltf"
+      alt="A 3D model of a chair"
       field-of-view="80deg"
       camera-controls
-    ></model-viewer>
-  </div> -->
-  <!-- </div> -->
-  <div class="image-container">
-    <img id="myImage" src="../../assets/teens-exploring-technology.png" />
+    ></model-viewer> -->
   </div>
+  <!-- </div> -->
+  <!-- <div class="image-container">
+    <img id="myImage" src="../../assets/teens-exploring-technology.png" />
+  </div> -->
 
   <!-- <div class="one" [innerHtml]="htmlToAdd"></div> -->
   <!-- <div class="engine-wrapper">
       <canvas #rendererCanvas></canvas>
     </div> -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-card-title>Card Title</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile, and
+      climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+    <div class="test-button">
+      <ion-button>TEST</ion-button>
+      <ion-button>TEST</ion-button>
+    </div>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-card-title>Card Title</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile, and
+      climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+    <div class="test-button">
+      <ion-button>TEST</ion-button>
+      <ion-button>TEST</ion-button>
+    </div>
+  </ion-card>
 </ion-content>
